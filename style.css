@@ -182,4 +182,102 @@
   }
   
   
+  @media screen and (max-width: 1075px) {
+    .wrapper {
+      padding: 10px;
+      margin-left: 200px;
+      width: 780px;
+      
+    }
+    header {
+      flex-direction: column;
+    }
+    header :where(h2, .column) {
+      margin-bottom: 13px;
+    }
+    .volume-slider input {
+      max-width: 100px;
+    }
   
+  .piano-keys {
+    margin-top: 15px;
+    
+  }
+ 
+  .piano-keys .black-key {
+    height: 100px;
+    width: 30px;
+    
+  }
+
+  .black-1 {
+    left: 50px;
+  }
+  
+  .black-2 {
+    left: 100px;
+  }
+  
+  .black-4 {
+    left: 200px;
+  }
+  
+  .black-5 {
+    left: 250px;
+  }
+  .black-6 {
+    left: 300px;
+  }
+  
+  .black-8 {
+    left: 400px;
+  }
+  .black-9 {
+    left: 451px;
+  }
+  
+  .black-11 {
+    left: 552px;
+  }
+  
+  .black-12 {
+    left: 600px;
+  }
+  
+  .black-13 {
+    left: 652px;
+  }
+
+  .piano-keys .white-key {
+    height: 180px;
+    width: 50px;
+  }
+
+
+}
+  
+  @media screen and (max-width: 570px) {
+    
+    .piano-keys .key:nth-child(11),
+    .piano-keys .key:nth-child(12),
+    .piano-keys .key:nth-child(13),
+    .piano-keys .key:nth-child(14),
+    .piano-keys .key:nth-child(23),
+    .piano-keys .key:nth-child(24),
+    .piano-keys .key:nth-child(25),
+    .piano-keys .key:nth-child(22)
+ {
+      display: none;
+    }
+    .piano-keys .white-key {
+      width: 50px;
+    }
+
+    .wrapper {
+      width: 550px;
+    }
+
+    .piano-keys .black-key span {
+      bottom: 15px;
+    }  
+  } 
